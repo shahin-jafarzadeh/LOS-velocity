@@ -6,9 +6,9 @@ Below are some simpel steps on how to read the (sample) data and run the code.
 First, we read the profile(s) and their associated wavelengths. In this example, the data is a 2D image of 204 by 208 pixels, sampling a small part of the solar photosphere. At each pixel, we have sampled the Fe I 6173 Å spectral line at 10 wavelength positions (i.e., the cube contains 42432 profiles). Each profile is treated separately.
 
 ```sh
-IDL> cube = readfits('SST_6173_StokesI.fits', header)
+IDL> cube = readfits('sample_data/SST_6173_StokesI.fits', header)
 % READFITS: Now reading 204 by 208 by 10 array
-IDL> wavelengths = readfits('SST_6173_StokesI.fits', ext=1)
+IDL> wavelengths = readfits('sample_data/SST_6173_StokesI.fits', ext=1)
 % READFITS: Reading FITS extension of type IMAGE
 % READFITS: Now reading 10 element vector
 ```
@@ -32,3 +32,11 @@ The calculated `losv` cube contains the LOS velocities of all pixels over the en
 IDL> help, losv
 LOSV            FLOAT     = Array[204, 208, 10]
 ```
+
+Here is an example image of the LOS velocity at the 40% intensity level:
+
+![LOSv_example40]
+
+Please note that bisectors at the first level make no sense and should be excluded. Also, depending on the spectral line sampling, the last one or two may not be reliable (as they approach the continuum). In both cases (i.e., the line core and close to continuum the **bisector** measurements become invalid).
+
+[LOSv_example40]: ../images/LOSv_example40.jpg
