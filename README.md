@@ -33,9 +33,9 @@ IDL> help, losv
 LOSV            FLOAT     = Array[204, 208, 10]
 ```
 
-Here is an example image of the LOS velocity at the 40% intensity level:
+Here is an example image of the LOS velocity at the 40% intensity level (i.e., losv[*,*,4]):
 
-![LOSv_example40]
+<img src="images/LOSv_example40.jpg" width="485" height="auto" />
 
 Please note that bisectors at the first level make no sense and should be excluded. Also, depending on the spectral line sampling, the last one or two may not be reliable (as they approach the continuum). In both cases (i.e., the line core and close to continuum the **bisector** measurements become invalid).
 
