@@ -39,4 +39,4 @@ Here is an example image of the LOS velocity at the 40% intensity level:
 
 Please note that bisectors at the first level make no sense and should be excluded. Also, depending on the spectral line sampling, the last one or two may not be reliable (as they approach the continuum). In both cases (i.e., the line core and close to continuum the **bisector** measurements become invalid).
 
-[LOSv_example40]: images/LOSv_bisector_example40.jpg
+[LOSv_example40]: images/LOSv_example40.pdf
