@@ -39,3 +39,6 @@ Here is an example image of the LOS velocity at the 40% intensity level (i.e., l
 
 Please note that bisectors at the first level make no sense and should be excluded. Also, depending on the spectral line sampling, the last one or two may not be reliable (as they approach the continuum). In both cases (i.e., the line core and close to continuum the **bisector** measurements become invalid).
 
+One could also plot the bisectors measured at each pixel (each profile). Below is an example for cube[10,10,*].
+
+<img src="images/bisector_example.jpg" width="485" height="auto" />
