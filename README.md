@@ -33,7 +33,7 @@ IDL> help, losv
 LOSV            FLOAT     = Array[204, 208, 10]
 ```
 
-Here is an example image of the LOS velocity at the 40% intensity level (i.e., losv[*,*,4]):
+Here is an example image of the LOS velocity at the 40% intensity level (i.e., `losv[*,*,4]`):
 
 <img src="images/LOSv_example40.jpg" width="485" height="auto" />
 
